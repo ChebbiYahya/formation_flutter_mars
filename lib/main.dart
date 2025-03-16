@@ -1,5 +1,7 @@
+import 'package:clone_spotify_mars/screens/login_page.dart';
+import 'package:clone_spotify_mars/screens/routes_page.dart';
+import 'package:clone_spotify_mars/screens/starting_page.dart';
 import 'package:flutter/material.dart';
-import 'screens/login_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +12,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Spotify', home: LoginPage());
+    return MaterialApp(title: 'Spotify', home: RoutesPage());
   }
 }

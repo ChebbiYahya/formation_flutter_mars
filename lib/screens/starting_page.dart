@@ -1,3 +1,4 @@
+import 'package:clone_spotify_mars/screens/login_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -142,7 +143,12 @@ class StartringPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LoginPage()),
+                      );
+                    },
                     child: Text(
                       "Log in",
                       style: TextStyle(
