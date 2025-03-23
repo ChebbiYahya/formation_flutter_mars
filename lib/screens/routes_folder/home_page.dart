@@ -1,4 +1,5 @@
 import 'package:clone_spotify_mars/models/music_model.dart';
+import 'package:clone_spotify_mars/screens/components/nouveaute_vertical_widget.dart';
 import 'package:flutter/material.dart';
 
 import '../components/nouveaute_widget.dart';
@@ -23,6 +24,16 @@ class HomePage extends StatelessWidget {
               itemBuilder:
                   ((context, index) =>
                       NouveauteWidget(musicModel: musicList[index])),
+            ),
+          ),
+          Text("List Vertical"),
+          Expanded(
+            child: ListView.builder(
+              itemCount: musicList.length,
+              scrollDirection: Axis.vertical,
+              itemBuilder:
+                  ((context, index) =>
+                      NouveauteVerticalWidget(musicModel: musicList[index])),
             ),
           ),
         ],

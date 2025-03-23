@@ -14,6 +14,42 @@ class MusicModel {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 List<MusicModel> musicList = [
   MusicModel(
     id: 1,
